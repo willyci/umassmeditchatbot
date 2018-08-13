@@ -12,6 +12,7 @@ using Microsoft.Bot.Connector;
 namespace Microsoft.Bot.Sample.LuisBot
 {
     // For more information about this template visit http://aka.ms/azurebots-csharp-luis
+    // Test
     [Serializable]
     public class BasicLuisDialog : LuisDialog<object>
     {
