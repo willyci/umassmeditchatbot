@@ -25,6 +25,16 @@ namespace Microsoft.Bot.Sample.LuisBot
 
         public const string FormType = "";
 
+
+
+        [LuisIntent("")]
+        public async Task EmptyIntent(IDialogContext context, LuisResult result)
+        {
+            //await this.ShowLuisResult(context, result);
+            await context.SayAsync(text: "Hi, welcome to UMass medical IT help Chat bot! How can I help you?",
+                                   speak: "Hi, welcome to UMass medical IT help Chat bot! How can I help you?");
+        }
+        
         [LuisIntent("None")]
         public async Task NoneIntent(IDialogContext context, LuisResult result)
         {
