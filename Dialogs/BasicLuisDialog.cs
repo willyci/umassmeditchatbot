@@ -410,15 +410,15 @@ namespace Microsoft.Bot.Sample.LuisBot
         {
             var smtpClient = new System.Net.Mail.SmtpClient();
             var msg = new System.Net.Mail.MailMessage();
-            msg.To.Add("mahima.parashar@umassmed.edu");
+            msg.To.Add("thewolfpack@umassmed.edu");
             if (NewWebsiteRequest == null)
             {
-                msg.Subject = "Test";
+                msg.Subject = "CMS Request - Test";
                 msg.Body = "CMS Request";
             }
             else
             {
-                msg.Subject = "Test";
+                msg.Subject = "New Website Request - Test";
                 msg.Body = "New Website Request";
             }
             smtpClient.Send(msg);

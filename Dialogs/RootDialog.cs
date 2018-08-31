@@ -187,8 +187,8 @@ namespace LuisBot.Dialogs
 
             var smtpClient = new SmtpClient();
             var msg = new MailMessage();
-            msg.To.Add("mahima.parashar@umassmed.edu");
-            msg.Subject = "Test";
+            msg.To.Add("thewolfpack@umassmed.edu");
+            msg.Subject = "Sending from AI Chatbot - Test";
             msg.Body = "This is just a test email";
             smtpClient.Send(msg);
 

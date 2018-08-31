@@ -224,8 +224,8 @@ namespace LuisBot.Dialogs
         {
             var smtpClient = new System.Net.Mail.SmtpClient();
             var msg = new System.Net.Mail.MailMessage();
-            msg.To.Add("mahima.parashar@umassmed.edu");
-            msg.Subject = "CMS Login Issues";
+            msg.To.Add("thewolfpack@umassmed.edu");
+            msg.Subject = "CMS Login Issues - Test";
             if (EmailToTeamForFurtherAssistance == false)
             {
                 msg.Body = @"{Fullname_lan} from {Department_lan} is unable to log into the CMS from their office computer.";
