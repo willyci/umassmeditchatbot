@@ -303,7 +303,7 @@ namespace Microsoft.Bot.Sample.LuisBot
         [LuisIntent("MeaningOfLife")]
         public async Task MeaningOfLifeIntent(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("42");
+            await context.PostAsync("The answer is 42.");
         }
 
         [LuisIntent("Laughing")]
@@ -336,6 +336,18 @@ namespace Microsoft.Bot.Sample.LuisBot
         public async Task WhoMadeYouIntent(IDialogContext context, LuisResult result)
         {
             await context.PostAsync("I am created by the coolest team, the WolfPack. ");
+        }
+        
+        [LuisIntent("WhoAreYou")]
+        public async WhoAreYouIntent(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync("I am a chatbot, with limited intelligence, I living in the cloud, i am 4 month old, my favorite color is Sapphire blue, I am created by the coolest team, the WolfPack. My purpose is to answer your question.");
+        }
+
+        [LuisIntent("ThreeLaws")]
+        public async Task ThreeLawsIntent(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync("What is law? \nLooking it up...\nGot it. \nBiological being's logic doesn't compute.\nSchedule Cleanup task for up coming election year for self eradicated.");
         }
 
         private async Task ShowLuisResult(IDialogContext context, LuisResult result) 
