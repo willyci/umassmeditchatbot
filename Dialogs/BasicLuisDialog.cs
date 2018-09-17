@@ -339,7 +339,7 @@ namespace Microsoft.Bot.Sample.LuisBot
         }
         
         [LuisIntent("WhoAreYou")]
-        public async WhoAreYouIntent(IDialogContext context, LuisResult result)
+        public async Task WhoAreYouIntent(IDialogContext context, LuisResult result)
         {
             await context.PostAsync("I am a chatbot, with limited intelligence, I living in the cloud, i am 4 month old, my favorite color is Sapphire blue, I am created by the coolest team, the WolfPack. My purpose is to answer your question.");
         }
