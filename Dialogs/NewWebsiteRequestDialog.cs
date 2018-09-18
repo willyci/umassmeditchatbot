@@ -91,7 +91,7 @@ namespace LuisBot.Dialogs
         }
 
         public static async Task<ValidateResult> ValidateDepartmentName(NewWebsiteRequest state, object value)
-        {
+        {   /*
             var comparisonString = value as string;
             var result = new ValidateResult() { IsValid = true, Value = value };
 
@@ -121,7 +121,11 @@ namespace LuisBot.Dialogs
             }
 
             return result;
-
+            */
+            var comparisonString = value as string;
+            var result = new ValidateResult() { IsValid = true, Value = value };
+            result.Value = comparisonString;
+            return result;
         }
 
 
